@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<br/>
+ {% if user.is_authenticated %}
+    <div class='row'>
+      <div class='col-sm-6 col-sm-offset-3'>
+        <h2 align="center">Educational Qualifications</h2>
+        <form method="post">
+          {% csrf_token %}
+          {{ form|crispy }}
+        <button class='btn btn-primary' type="submit"><a href='{% url 'qualification' %}'>Save and add another</button>
+        <button class='btn btn-primary' type="submit"><a href='{% url 'qualification' %}'>Save and continue editing</button>
+        <button class='btn btn-primary' type="submit">Save</button>
+        </form>
+      </div>
+    </div>
+  {% else %}
+      <h2>You are not Logged in.</h2>
+  {% endif %}
+{% endblock %}

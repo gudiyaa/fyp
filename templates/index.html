@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+{% block content %}
+<!--Image Slider Begins-->
+<div class="main-body">
+  <div class="container-fluid" style="margin-top: 3%;width: 100%">
+    <div class="row">
+      <div class="col-md-7" style="width: 66.333%">
+             <!--main Image Slider Code Starts Here-->
+        <!--<div id="sliderFrame">
+          <div id="slider">-->
+            <img src="{% static 'calculator/img/images1/image-slider-2.jpg' %}" style="width:100% ;height:auto"/> 
+           <!-- <img src="{% static 'calculator/img/images1//image-slider-3.jpg' %}" style="width:100% ;height:auto"/>
+            <img src="{% static 'calculator/img/images1/image-slider-5.jpg' %}" style="width:110% ;height:auto"/>
+          </div>-->
+          <div id="htmlcaption" style="display: none;">
+            <em>HTML</em> caption. Link to <a href="http://www.google.com/">Google</a>.
+          </div>
+        <!--</div>-->
+               <!--Main image Slider Code Ends Here-->
+        <div class="row" style="margin-top: 10%;">
+          <div class="panel panel-primary" style="width:95%; margin-left: 3%;box-shadow: 4px 6px 3px gray" >
+            <div class="panel-heading" style="background-color: #191C1B">
+              <h3 class="panel-title text-center">News and Notices</h3>    
+            </div>     
+            <div class="panel-body"  style="margin-left: 3%; width:96%;margin-top: 2%">
+              <div class="list-type5" style="margin-left: 7%">
+                <ol>
+                  <li><a href="#"> <span>14th of October</span> <b>:</b> <span>   Will update soon</span></a></li>
+                  <li><a href="#"><span>9th of November</span><b>:</b> <span>Will Update soon</span> </a></li>
+                </ol>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5" style="width: 32.66667%">
+        <div class="panel panel-primary"  style="box-shadow: 15px 10px 5px grey;">
+          <div class="panel-heading text-center" style="background-color: #191C1B; border-radius: 3px">
+            <strong>UpComing Events</strong></div>
+            <div class="panel-body" style="width: 100%">
+              <img src="{% static 'calculator/img/images1//image-slider-3.jpg' %}" style="width: 100%;">
+            </div>
+               <div class="panel-body" style="width: 100%">
+              <img src="{% static 'calculator/img/images1//image-slider-5.jpg' %}" style="width: 100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-7" style="width: 65.3333%;">
+          <div class="panel panel-default" style="width: 95%;margin-left: 3%;margin-top: 4%;box-shadow: 0px 4px 11px 3px gray;background-color: aliceblue">
+            <div class="panel-heading text-center" style="color: white;background-color: #191C1B;">MISSION AND VISION
+            </div>
+            <div class="panel-body"> 
+              <span style="font-size: 145%;font-weight: 600"> Vision</span>  &nbsp;&nbsp;&nbsp;<b>:</b>&nbsp;&nbsp;&nbsp;
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5" style="width: 33.6667%;">
+          <div class="panel panel-default" style="margin-top: 8%;box-shadow: 0px 4px 11px 3px gray;background-color: #DFAFED">
+            <div class="panel-heading text-center "  style="color: white;background-color: #191C1B;">Thoughts Of The Week
+            </div>
+            <div class="panel-body">
+              <strong>Innovation distinguishes between a leader and a follower</strong>
+              <br>
+              <span style="margin-left: 65%">By Steve Jobs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</div>    
+{% endblock %}

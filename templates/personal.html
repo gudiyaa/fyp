@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<br/>
+ {% if user.is_authenticated %}
+    <div class='row'>
+      <div class='col-sm-6 col-sm-offset-3'>
+        <h2>Personal Details</h2>
+        <form method="post">
+          {% csrf_token %}
+          {{ form|crispy }}
+        <button class='btn btn-block btn-primary' type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  {% else %}
+      <h2>You are not Logged in.</h2>
+  {% endif %}
+{% endblock %}

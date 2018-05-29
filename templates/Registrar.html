@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="main-body">
+  <div style="margin-left: 13%;margin-top: 4%">
+    <h3 style="font-size: 200%;font-weight: bold">Registrar's Profile</h3>
+  </div>
+  <div class="panel panel-default" style="width: 87%;margin-left: 10%;margin-top: 4%;box-shadow: 0px 4px 11px 3px gray;background-color: aliceblue">
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="reg.jpg" width="150" height="180">
+        </div>    
+        <div class="col-md-5">
+        	<h4 style="font-weight:bold;font-style: italic;">
+            <span style="font-weight: bolder;font-size: 159%">&#34; </span>
+            <span>All the Best</span>
+            <span style="font-weight: bolder;font-size: 159%">&#34; </span>
+          </h4>
+        </div>
+      </div>
+      <div class="row">
+        <h3> Dr. Rohit Mehra </h3>
+        <h4>	&#40; Resigstrar 	&#41;</h4>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

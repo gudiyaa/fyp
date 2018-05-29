@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<br/>
+ {% if user.is_authenticated %}
+    <div class='row'>
+      <div class='col-sm-6 col-sm-offset-3'>
+        <h2 align="center">Research Papers</h2>
+          {{ author1 }} <br>
+        <button class='btn btn-block btn-primary' type="submit"><a href='{% url 'research' %}'>Back</a></button>
+      </div>
+    </div>
+  {% else %}
+      <h2>You are not Logged in.</h2>
+  {% endif %}
+{% endblock %}
